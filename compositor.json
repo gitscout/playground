@@ -1,0 +1,83 @@
+{
+  "name": "gitscout/playground",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "test",
+  "branch": "master",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/gitscout/playground",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "playground",
+      "subhead": "A place to try, destroy, experiment stuff with Gitscout",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "playground: A place to try, destroy, experiment stuff with Gitscout",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "gitscout",
+          "repo": "playground"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Welcome to Gitscout Playground repository</h1>\n<p>The goal of this Playground is to allow our users to try our features or reproduce bugs on a test repo.</p>\n<p>Use it as much as you want &#x2013; try, destroy, experiment stuff with Gitscout!</p>\n<p>This place is open, we only ask you to <a href=\"http://contributor-covenant.org/version/1/2/0/\">respect our Code of Conduct</a>.</p>\n<p>Have fun and thanks for using Gitscout! &#x1F918;</p>\n<p>Cheers,</p>\n<p>The Gitscout team</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/gitscout/playground",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/gitscout",
+          "text": "gitscout"
+        }
+      ]
+    }
+  ]
+}
